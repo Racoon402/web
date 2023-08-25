@@ -1,0 +1,126 @@
+
+.card{
+    text-decoration: none;
+    color:black
+}
+#instarTag{
+    color: black;
+}
+.out-box{
+    width: 75px;
+    height: 75px;
+}
+#target{
+    background-image: url("https://raw.githubusercontent.com/Racoon402/dweb2023/main/source/logo_target.png");
+    background-size: cover;
+}
+.target-greed{
+    border: 2px solid black;
+}
+
+#tableContainer {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#recode {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+#tableContainer th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#tableContainer td{
+    width: 44px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.active {
+    background-color: rgba(61, 77, 66, 0.8);
+    color: #fff;
+}
+.registerBTN{
+    text-decoration: none;
+    color: white;
+}
+
+#buttonContainer button {
+    background-color: #3D4D42;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+#buttonContainer button:hover {
+    background-color: #5E735D;
+}
+
+#buttonContainer #removebutton:hover {
+    background-color: #922B21; /* .active 배경색과 유사한 색으로 변경 */
+}
+
+#buttonContainer #savebutton:hover {
+    background-color: #5E735D;
+}
+
+
+.unshow{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        border: none; /* Remove borders */
+        border-radius: 0; /* Remove border radius */
+        box-shadow: none; /* Remove shadow */
+    }
+
+    .navbar .nav-item:hover .dropdown-menu,
+    .navbar .nav-item .dropdown-menu:hover {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+
+    .dropdown-menu {
+        background-color: #f8f9fa; /* Background color */
+        border: none;
+    }
+
+    .dropdown-item {
+        color: #333; /* Text color */
+    }
+
+    .dropdown-item:hover {
+        background-color: #e2e3e5; /* Hover background color */
+    }
+}
+@media screen and (max-width: 992px) {
+    #instarTag{
+        display: none;
+    }
+}
+@media screen and (max-width: 674px) {
+    #recode {
+       width: 100%;
+    }
+}
+

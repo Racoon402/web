@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-lg">
+            <a class="navbar-brand d-flex " href="/">
+                <img src="https://raw.githubusercontent.com/Racoon402/dweb2023/main/source/Logo-removebg.png"
+                    width="55px" height="55px">
+                <h1 class="ms-2 mt-1 fs-1">어의궁</h1>
+            </a>
+            <button class="navbar-toggler navbar-expand-sm " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0  position-absolute end-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-4" href="#" id="introDropdown" role="button"
+                            data-bs-toggle="dropdown">소개</a>
+                        <ul class="dropdown-menu" aria-labelledby="introDropdown">
+                            <li><a class="dropdown-item" href="/intro_page">
+                                    동아리소개</a></li>
+                            <li><a class="dropdown-item" href="/intro_group"> 조직도
+                                </a></li>
+                            <li><a class="dropdown-item" href="/intro_map"> 오시는 길
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-4" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown">서비스</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a href="/recode" class="dropdown-item" id="recodeLink">습사 일지</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/map"> 습사 예약 </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-4" href="#" id="boardDropdown" role="button"
+                            data-bs-toggle="dropdown">게시판</a>
+                        <ul class="dropdown-menu" aria-labelledby="introDropdown">
+                            <li><a class="dropdown-item" href="/board_free">
+                                    자유게시판</a></li>
+                            <li><a class="dropdown-item" href="/board_photo">
+                                    활동일지</a>
+                            </li>
+                            <li><a class="dropdown-item" href="/board_recode">
+                                    습사기록</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mt-2">
+                        <a href="https://www.instagram.com/seoultech_archery/" id="instarTag">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-3 position-relative">
+                        <a class="nav-link fs-6" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown">
+                            <img src="https://raw.githubusercontent.com/Racoon402/dweb2023/main/source/user.png"
+                                style="width: 40px;">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="/logout">로그아웃</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-lg" style="min-height: 53rem;">
+        <div class="row mt-4 border" style="min-height: 550px;">
+            <div class="accordion col-xl-5 col-lg-6" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            석호정
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>주소</strong>
+                            <p>서울 중구 남산공원길 372</p>
+                            <strong>전화번호</strong>
+                            <P> 02-2266-0665</P>
+                            <strong>예약하기</strong><br />
+                            <a
+                                href="https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210409161710572399&tr_code=yeyak">https://yeyak.seoul.go.kr/web/reservation/</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            천마정
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>주소</strong>
+                            <p>경기 남양주시 송산로 53</p>
+                            <strong>전화번호</strong>
+                            <P>031-560-1315</P>
+                            <strong>예약하기</strong><br />
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            수락정
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>주소</strong>
+                            <p>서울 노원구 상계동 산 155-1</p>
+                            <strong>전화번호</strong>
+                            <P>02-939-5154</P>
+                            <strong>예약하기</strong><br />
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            난지국궁장
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>주소</strong>
+                            <p>서울 마포구 상암동 496-171</p>
+                            <strong>전화번호</strong>
+                            <P>-</P>
+                            <strong>예약하기</strong><br />
+                            <p>문의: 010-9913-7443</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            TAC전통활쏘기클럽
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>주소</strong>
+                            <p>서울 동대문구 하정로 8 지하1층</p>
+                            <strong>전화번호</strong>
+                            <P>070-4110-1922</P>
+                            <strong>예약하기</strong><br />
+                            <a
+                                href="https://linktr.ee/traditionalarcheryclub">https://linktr.ee/traditionalarcheryclub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            활쏘아궁술클럽
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>주소</strong>
+                            <p>서울 노원구 공릉로59가길 9 지하1층</p>
+                            <strong>전화번호</strong>
+                            <P>070-8153-2622</P>
+                            <strong>예약하기</strong><br />
+                            <p>문의: 070-8153-2622</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mapBox" class="col-xl-7 col-lg-6 border" style="min-height:12rem">
+                <div id="map" style="width:100%; height:100%;"></div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="bd-footer bg-light mt-5">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-9 pt-3 pb-3 ms-3">
+                    <strong class="fs-5">어의궁</strong>
+                    <p>Seoultech Archery</p>
+                    <div>서울 노원구 공릉로 232 서울과학기술대학교 제1학생회관</div>
+                </div>
+                <div class="col position-relative">
+                    <strong class=" mb-3 me-4 position-absolute bottom-0 end-0">
+                        서울과학기술대학교
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fad28f04d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=920255ea8994c97104a0e20f78181bbb"></script>
+    <script src="map.js"></script>
+
+</body>
+
+</html>

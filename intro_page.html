@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-lg">
+            <a class="navbar-brand d-flex " href="/">
+                <img src="https://raw.githubusercontent.com/Racoon402/dweb2023/main/source/Logo-removebg.png"
+                    width="55px" height="55px">
+                <h1 class="ms-2 mt-1 fs-1">어의궁</h1>
+            </a>
+            <button class="navbar-toggler navbar-expand-sm " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse position-relative" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0  position-absolute end-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-4" href="#" id="introDropdown" role="button"
+                            data-bs-toggle="dropdown">소개</a>
+                        <ul class="dropdown-menu" aria-labelledby="introDropdown">
+                            <li><a class="dropdown-item" href="/intro_page">
+                                    동아리소개</a></li>
+                            <li><a class="dropdown-item" href="/intro_group"> 조직도
+                                </a></li>
+                            <li><a class="dropdown-item" href="/intro_map"> 오시는 길
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-4" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown">서비스</a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a href="/recode" class="dropdown-item loginCheck">습사 일지</a>
+                            </li>
+                            <li><a href="/map" class="dropdown-item loginCheck"> 습사 예약 </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs-4" href="#" id="boardDropdown" role="button"
+                            data-bs-toggle="dropdown">게시판</a>
+                        <ul class="dropdown-menu" aria-labelledby="introDropdown">
+                            <li><a class="dropdown-item" href="/board_free">
+                                    자유게시판</a></li>
+                            <li><a class="dropdown-item" href="/board_photo">
+                                    활동일지</a>
+                            </li>
+                            <li><a class="dropdown-item loginCheck" href="/board_recode">
+                                습사기록</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="mt-2">
+                        <a href="https://www.instagram.com/seoultech_archery/" id="instarTag">
+                            <i class="fa-brands fa-instagram fa-2x" style="color: #4A4F5A;"></i>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="nav-link fs-6" href="#" id="loginDropdown" role="button" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            <img src="https://raw.githubusercontent.com/Racoon402/dweb2023/main/source/login.png"
+                                style="width: 35px; height: 35px;">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">로그인</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/login" method="POST">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                            <br>
+                            <label class="mt-3" for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                            <br>
+                            <div class="modal-footer mt-3">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                    <a class="registerBTN" href="/register">회원가입</a></button>
+                                <button type="submit" class="btn btn-primary" id="loginButton">로그인</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container-lg" style="min-height: 53rem;">
+        <div class="mt-3 row">
+            <div class="col-2 ">
+                <nav id="navbar-side" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav nav-pills flex-column position-sticky top-0 pt-3">
+                        <a class="nav-link" href="#item-1">국궁이란</a>
+                        <a class="nav-link" href="#item-2">어의궁</a>
+                    </nav>
+                </nav>
+            </div>
+            <div class=" col-10">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-side" data-bs-smooth-scroll="true"
+                    class="scrollspy mt-3" tabindex="0" style="font-size: 18px; max-width: 66rem;">
+                    <div id="item-1">
+                        <h1>국궁이란?</h1>
+                        <p>국궁은 한국의 전통적인 활쏘기 스포츠로, 궁과 화살을 사용하여 목표물을 겨냥하여 화살을 발사하는 기술을 연마하는 활동입니다.
+                        <br/> 국궁은 한국의 역사와 문화를 반영하며, 예로부터 궁궐에서 경기되던 왕실의 레저 활동에서 비롯되었습니다. 현재는 스포츠로서의 측면이 크게 강조되며, 많은 사람들이 즐기고 학습하는 활동으로 자리잡고 있습니다.</p>
+                        
+                        <h2>국궁의 주요 특징</h2>
+                        <ul>
+                          <li>
+                            <strong>전통적인 기술과 예절</strong>
+                            <p>국궁은 그 자체로 예절과 전통적인 국가 정신을 중요시하는 활동입니다. 활을 쏘는 것 뿐만 아니라 자세, 모습, 태도, 인사 등에도 엄격한 규칙과 예절이 존재합니다.</p>
+                          </li>
+                          <li>
+                            <strong>장비와 화살</strong>
+                            <p>국궁에서 사용되는 활은 일반적인 활과는 조금 다릅니다. 더 길고 휠씬 크며, 끌기 방식도 특이하며, 화살 역시 일반 활에 비해 더 굵고 짧습니다.</p>
+                          </li>
+                          <li>
+                            <strong>표적과 거리</strong>
+                            <p>국궁 경기는 일반적으로 여러 거리에서 행해지며, 화살을 목표물에 꽂는 정확도를 겨냥합니다. 다양한 크기와 모양의 표적을 사용하며, 경기자는 주어진 시간 안에 정해진 거리에서 화살을 발사합니다.</p>
+                          </li>
+                          <li>
+                            <strong>대회와 행사</strong>
+                            <p>국궁은 국내외에서 다양한 대회와 행사로 열리며, 전통적인 요소를 존중하면서도 현대적인 스포츠 경기로서 진행됩니다. 한국을 넘어 세계적으로도 관심을 받는 종목 중 하나입니다.</p>
+                          </li>
+                          <li>
+                            <strong>신체적, 정신적 가치</strong>
+                            <p>국궁은 몸의 균형, 근육 발달, 집중력, 인내 등을 키우는 데 도움이 되는 신체적인 가치 뿐만 아니라, 예절과 인격을 함양하는 정신적인 가치를 갖고 있습니다.</p>
+                          </li>
+                          <li>
+                            <strong>문화적 유산</strong>
+                            <p>국궁은 한국의 전통 문화와 역사를 지키고 전승하는 중요한 문화 유산 중 하나입니다. 많은 사람들이 이를 배우고 수련함으로써 한국의 문화를 더 깊이 이해하게 되는 계기가 되고 있습니다.</p>
+                          </li>
+                        </ul>
+                        
+                        <p>국궁은 한국의 아름다운 전통과 현대적인 스포츠의 결합으로 다양한 사람들에게 사랑받는 활동입니다.</p>
+                        <img style="width: 70%;" src="https://i.namu.wiki/i/vEW4OLQtr4A8lqo7lbBI4bKruzPDfk3T_IGQ_ZojuOCDb6OVnxjzfTdZIWarg00l_CzpFcnEI17etFhMRWMqIAzlqH66Exlv0ENMSN1pXa8eVU_evur4X-fsROwcbpO67Q4fAPhDchsZzgK0KqDRz6lN1JsJlwqybikioQUAfJo.jpg"></h3>
+                    </div>
+                    <div id="item-2" class="mt-4">
+                        <h1><strong>의를 좆는 활쏘기, '어의궁'</strong><h1>
+                        <h4>서울과학기술대학교 중앙동아리인 어의궁은 교내 유일무의한 활쏘기 동아리입니다</h3>
+                        <br>
+                        <p>
+                            <strong>동아리 활동</strong><br>
+                            🎯 우리나라 전통 활쏘기에 대해 배우기<br>
+                            🏞 교육 수료 후 서울 다양한 장소에서 활쏘기 체험<br>
+                            🏆 전국 활쏘기 대회 및 한국궁도연맹 주최 입승급전 참여
+                        </p>
+                        <p>
+                            <strong>모집대상</strong><br>
+                            🎯 국궁에 관심있는 서울과학기술대학교 재학생 모두
+                        </p>
+                        <p>
+                            <strong>Q&A</strong><br>
+                            Q: "운동경험이 부족하고 힘이 약한데 괜찮나요?"<br>
+                            A: 운동신경이 나쁘더라도 활을 연습하면 근력이 점차 증진됩니다! 커리큘럼에서도 근력 약한 분들을 위해 신경 씁니다.<br>
+                            Q: "고학번도 들어갈 수 있나요?"<br>
+                            A: 국궁을 배우려는 의지 하나면 나이, 학번 상관없이 누구든 어의궁에 오실 수 있습니다.
+                        </p>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+    </main>
+    <footer class="bd-footer bg-light mt-5">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-9 pt-3 pb-3 ms-3">
+                    <strong class="fs-5">어의궁</strong>
+                    <p>Seoultech Archery</p>
+                    <div>서울 노원구 공릉로 232 서울과학기술대학교 제1학생회관</div>
+                </div>
+                <div class="col position-relative">
+                    <strong class=" mb-3 me-4 position-absolute bottom-0 end-0">
+                        서울과학기술대학교
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fad28f04d.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
